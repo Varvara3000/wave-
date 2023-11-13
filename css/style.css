@@ -1,0 +1,914 @@
+html {
+  box-sizing: border-box;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../images/bg-image.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__top-inner {
+  position: relative;
+}
+
+.logo-image {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.menu {
+  margin: 0 auto;
+  padding-top: 52px;
+  position: relative;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list-item {
+  margin-right: 45px;
+  color: #fff;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.menu__list-link {
+  color: #fff;
+  height: 33px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #00b2a0;
+}
+
+.header__middle-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 85px);
+}
+
+.header__title {
+  margin-top: auto;
+  color: #0d302c;
+  font-family: Raleway;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.subtitle {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: auto;
+}
+
+.bottom-icon {
+  margin-bottom: 92px;
+  margin-top: 92px;
+}
+
+.title {
+  color: #01353e;
+  font-family: Raleway;
+  padding-top: 200px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.title span {
+  position: relative;
+}
+
+.title span::after {
+  content: "";
+  position: absolute;
+  right: -48px;
+  width: 48px;
+  height: 85px;
+  top: -10px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/title-underline.svg");
+}
+
+.about__title {
+  margin-bottom: 95px;
+}
+
+.about__text {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  padding: 0 60px;
+}
+
+.about__text-left {
+  color: #242121;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+
+.about__text p {
+  margin-bottom: 30px;
+}
+
+.about__text-right {
+  color: #242121;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: 0.6px;
+}
+
+p.margin-text-medium {
+  margin-bottom: 48px;
+}
+
+p.margin-text-big {
+  margin-bottom: 79px;
+}
+
+.mountain__wrapper {
+  display: flex;
+}
+
+.mountain__title {
+  margin-bottom: 100px;
+}
+
+.mountain__text P {
+  line-height: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: #242121;
+  margin-bottom: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.mountain__info {
+  width: 50%;
+  padding-right: 85px;
+}
+
+.image__wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  max-width: 960px;
+  height: 100%;
+}
+
+.school {
+  background-color: #f8f8f8;
+}
+
+.school__title {
+  margin-bottom: 101px;
+}
+
+.school__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 103px;
+}
+
+.school__item {
+  width: 350px;
+  margin-right: 75px;
+  position: relative;
+}
+
+.school__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school__item--sun {
+  background-image: url("../images/sun.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.school__item--plane {
+  background-image: url("../images/plane.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.school__item--wave {
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.school__item-title {
+  line-height: 28px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  width: 150px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.margin-one {
+  margin-bottom: 19px;
+}
+
+.margin-two {
+  margin-bottom: 10px;
+}
+
+.margin-three {
+  margin-bottom: 15px;
+}
+
+.school__item-text {
+  color: #242121;
+  font-weight: 300;
+  width: 350px;
+  letter-spacing: 0.6px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 18px;
+}
+
+.school__inner {
+  display: flex;
+}
+
+.school__info-item-header {
+  display: flex;
+  align-items: center;
+}
+
+.school__info-item--vector-one {
+  background-image: url("../images/vector85%.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.school__info-item--vector-two {
+  background-image: url("../images/vector95%.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 247px;
+  margin-right: 10px;
+}
+
+.school__info-item--vector-three {
+  background-image: url("../images/vector99%.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 293px;
+  margin-right: 10px;
+}
+
+.school__text {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.school__text p {
+  margin-bottom: 30px;
+}
+
+.school__info {
+  width: 50%;
+}
+.team{
+  padding-bottom: 60px;
+}
+
+.team__title {
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 212px;
+}
+
+.team__memder-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__member-info {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.team__member-name {
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 5px;
+}
+
+.team__member-role {
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #242121;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.pricing {
+  background-color: #f8f8f8;
+  padding-bottom: 60px;
+}
+
+.pricing__title {
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #01353e;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 212px;
+}
+
+.pricing__price-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__price-item {
+  width: 360px;
+  height: 577px;
+  background-color: #fff;
+  padding: 45px 0 0 43px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+}
+
+.pricing__item-title {
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 36px;
+  color: #01353e;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.pricing__price-text {
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 14px;
+  color: #242121;
+  padding-bottom: 20px;
+}
+
+.pricing__price-num {
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 36px;
+  color: #01353e;
+  position: absolute;
+  bottom: 45px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+}
+
+.pricing__price-num-sub {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 18px;
+  color: #01353e;
+  width: 9px;
+  height: 22px;
+}
+
+.form {
+  margin-bottom: 200px;
+}
+
+.form__title {
+  margin-bottom: 243px;
+}
+
+.form__info {
+  display: flex;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.form__form {
+  width: 50%;
+  padding-right: 31px;
+}
+
+.form__form input,
+.form__form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dadada;
+  resize: none;
+}
+
+.form__form input::placeholder,
+.form__form textarea::placeholder {
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 18px;
+  color: #00b2a0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.form__message {
+  height: 154px;
+  margin-bottom: 73px;
+}
+
+.form__name {
+  padding-bottom: 18px;
+  margin-bottom: 32px;
+}
+
+.form__phone {
+  padding-bottom: 16px;
+  margin-bottom: 55px;
+}
+
+.form__form button {
+  border: none;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 24px;
+  color: #242121;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 24px 111px;
+}
+
+.form__contact {
+  width: 50%;
+  background-color: #f8f8f8;
+  padding: 49px 0 71px 52px;
+}
+
+.form__adress {
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 24px;
+  color: #242121;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.form__adress-text {
+  margin-bottom: 65px;
+}
+
+.form__social {
+  display: flex;
+  justify-content: center;
+}
+
+.form__social-text a {
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 24px;
+  color: #242121;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 10px;
+}
+
+.green a {
+  color: #00b2a0;
+}
+
+.footer {
+  height: 200px;
+  background-color: #00b2a0;
+  position: relative;
+}
+
+.footer__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 25px;
+  top: 43px;
+  display: none;
+  cursor: pointer;
+}
+.menu__button path,
+rect {
+  fill: #fff;
+}
+.menu__button svg {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1300px){
+  .mountain__info {
+    width: auto;
+    padding-right: 85px;
+    padding-left: 30px;
+  }
+
+}
+@media (max-width: 1200px){
+  .school__items{
+    gap: 31px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .school__item{
+    margin-right: 0;
+  }
+  .school__inner{
+    padding-left: 31px;
+    padding-right: 43px;
+}
+.pricing__price-list{
+  column-gap: 25px;
+}
+  }
+
+
+@media (max-width: 1040px) {
+  ul.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 110px 0 10px 0;
+    transition: all 0.5s;
+  }
+  .menu__list_hide{
+    transform: translateY(-450px);
+  }
+  .menu__list-item{
+    width: 50%;
+    text-align: center;
+    padding-top: 16px;
+    line-height: 17px;
+    font-size: 19px;
+  }
+  .menu__list-item:hover {
+    border-bottom: #00b2a0;
+  }
+  .menu__button {
+    display: block;
+    z-index: 2;
+  }
+  .logo-image{
+    z-index: 2;
+  }
+  .menu_active path{
+    fill: #00b2a0;
+  }
+  .menu_active rect{
+    fill: #00b2a0;
+  }
+.title{
+  font-size: 28px;  
+  line-height: 30px;
+}
+.title span::after{
+  width: 48px;
+  height: 85px;
+    right: -40px;
+    position: absolute;
+    top: -23px;
+  }
+  .container{
+    height: auto;
+  }
+.image{
+  max-width: 600px;
+  height: 691px;
+  top: -76px;
+}
+.team__memder-list{
+  column-gap: 25px;
+}
+.team__title{
+  margin-bottom: 62px;
+}
+.pricing__title{
+  margin-bottom:91px;
+  padding-top: 54px;
+
+}
+.form__info {
+display: block;
+}
+.form__title {
+  margin-bottom: 87px;
+}
+.form__form{
+  margin-bottom: 50px;
+  width: auto;
+}
+.form__contact{
+  width: auto;
+}
+}
+@media (max-width: 950px){
+  .about__text{
+    max-width: 100% ;
+    display: block;
+    padding: 0 30px;
+  }
+  .about__text p {
+    margin-bottom: 20px;
+  }
+  .about__text-left {
+    margin-bottom: 50px;
+  }
+  .title span::after{
+    width: 112px;
+    height: 40px;
+    right: -75px;
+    position: absolute;
+    top: 8px;
+  }
+  .about__title{
+    margin-top: 39px;
+    margin-bottom: 60px;
+  }
+  .container{
+    height: auto;
+  }
+p.margin-text-big {
+  margin-bottom: 20px;
+}
+p.margin-text-medium {
+  margin-bottom: 20px;
+}
+.header__title{
+  font-size: 128px;
+  line-height: 157px;
+}
+.subtitle{
+  font-size: 19px;
+}
+.image__wrapper{
+  display: none;
+}
+.mountain__info {
+  width: auto;
+  padding-right: 85px;
+  padding-left: 28px;
+}
+.mountain__title {
+  margin-bottom: 43px;
+}
+.pricing__price-list{
+  display: block;
+  margin-left: 11px;
+    margin-right: 11px;
+}
+.pricing__price-item{
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 400px;
+}
+}
+
+@media (max-width: 880px){
+  .school__items{
+    justify-content: center;
+  }
+.form__title{
+  padding-top: 55px;
+}
+}
+
+@media (max-width: 800px){
+.school__inner{
+  display: block;
+} 
+.school__text{
+  width: 100%;
+}
+}
+
+@media (max-width: 512px){
+  .title span::after{
+    width: 38px;
+    height: 31px;
+    right: -40px;
+    position: absolute;
+    top: 42px;
+  }
+  .header__title{
+    font-size: 69px;
+    line-height: 106px;
+  }
+  .subtitle{
+    font-size: 16px;
+  }
+.mountain__title span::after{
+  top: 16px;
+}
+.school__title span::after{
+  top: 18px;
+}
+.team__title span::after{
+  top:14px
+}
+.pricing__title span::after{
+  top: 14px;
+}
+.pricing__title{
+  margin-bottom: 53px;
+}
+.form__title {
+  margin-bottom: 87px;
+}
+.form__title span::after{
+  top: 14px;
+}
+.form__social{
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 400px){
+  .title span::after{
+    width: 38px;
+    height: 31px;
+    right: -40px;
+    position: absolute;
+    top: 42px;
+  }
+  .team__title span::after{
+    top:14px
+  }
+  .pricing__title span::after{
+    top: 14px;
+  }
+  .pricing__price-item{
+    padding: 22px 0 0 22px;
+  }
+  .form__title span::after{
+    top: 14px;
+  }
+}
+
+@media (max-width: 333px){
+  .title span::after{
+    width: 38px;
+    height: 31px;
+    right: -40px;
+    position: absolute;
+    top: 75px;
+  }
+  .mountain__title span::after{
+    top: 47px;
+  }
+  .school__title span::after{
+    top: 48px;
+  }
+  .team__title span::after{
+    top:14px
+  }
+  .pricing__title span::after{
+    top: 14px;
+  }
+  .form__title span::after{
+    top: 14px;
+  }
+} 
